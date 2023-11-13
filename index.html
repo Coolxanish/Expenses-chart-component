@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Expenses chart component</title>
+
+</head>
+<body>
+  <div class="main">
+    <div class="balance_container">
+      <div class="balance_info">
+        <p class="myBalance">My balance</p>
+        <p class="balance_dollar">$921.48</p>
+      </div>
+      <img src="images\logo.svg" alt="">
+    </div>
+  
+    <div class="chart_container">
+      <p class="title_text">Spending - last 7 days</p>
+      <div class="bar_graphs">
+        <div class="week_div">
+          <div class="spendings spendings_mon"></div>
+          <div class="mon_graph week_graph"></div>
+          <p class="week_days">mon</p>
+        </div>
+        <div class="week_div">
+          <div class="spendings spendings_tue"></div>
+          <div class="tue_graph week_graph"></div>
+          <p class="week_days">tue</p>
+        </div>
+        <div class="week_div">
+          <div class="spendings spendings_wed"></div>
+          <div class="wed_graph week_graph"></div>
+          <p class="week_days">wed</p>
+        </div>
+        <div class="week_div">
+          <div class="spendings spendings_thu"></div>
+          <div class="thu_graph week_graph"></div>
+          <p class="week_days">thu</p>
+        </div>
+        <div class="week_div">
+          <div class="spendings spendings_fri"></div>
+          <div class="fri_graph week_graph"></div>
+          <p class="week_days">fri</p>
+        </div>
+        <div class="week_div">
+          <div class="spendings spendings_sat"></div>
+          <div class="sat_graph week_graph"></div>
+          <p class="week_days">sat</p>
+        </div>
+        <div class="week_div">
+          <div class="spendings spendings_sun"></div>
+          <div class="sun_graph week_graph"></div>
+          <p class="week_days">sun</p>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="container_last">
+        <div class="Total_div">
+          <p class="last_text">Total this month</p>
+          <p class="total_balance">$478.33</p>
+        </div>
+        <div class="percentage_div">
+          <p class="percentage">+2.4%</p>
+          <p class="last_text">from last month</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Anish</a>.
+  </div>
+
+  <script src="index.js" defer></script>
+</body>
+</html>

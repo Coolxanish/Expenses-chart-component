@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap');
+
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.125rem;
+    background-color: hsl(27, 66%, 92%);
+}
+
+.main {
+    width: 90%;
+    margin: 7em auto;
+    max-width: 500px;
+}
+
+.balance_container {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(10, 79%, 65%);
+
+    color: #fff;
+    padding: 1.5em;
+    border-radius: 10px;
+}
+
+.myBalance {
+    font-size: 1rem;
+}
+
+.balance_dollar {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.chart_container {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.title_text {
+    font-size: 2rem;
+    font-weight: 700;
+    color: hsl(25, 47%, 15%);
+}
+
+.bar_graphs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.week_div {
+    align-self: flex-end;
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.week_graph {
+    background-color: hsl(10, 79%, 65%);
+    height: 100px;
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 5px;
+
+    align-self: flex-end;
+}
+
+
+.mon_graph {
+    height: 60px;
+}
+
+.tue_graph {
+    height: 120px;
+}
+
+.wed_graph {
+    height: 180px;
+}
+
+.fri_graph, .sun_graph {
+    height: 80px;
+}
+
+.sat_graph {
+    height: 150px;
+}
+
+.week_days {
+    margin-top: 10px;
+    color: hsl(28, 10%, 53%);
+    margin-left: 10px;
+}
+
+.line {
+    border: 2px solid hsl(27, 66%, 92%);
+    margin: 40px 0
+}
+
+.container_last {
+    display: flex;
+    justify-content: space-between;
+}
+
+.last_text {
+    color: hsl(28, 10%, 53%);
+}
+
+.total_balance {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.percentage_div {
+    align-self: flex-end;
+}
+
+.percentage {
+    text-align: end;
+    font-weight: 700;
+}
+
+.spendings {
+    background-color: hsl(25, 47%, 15%);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.4em 0.4em;
+    margin-bottom: 5px;
+    border-radius: 5px;
+
+    visibility: hidden;
+}
+
+.week_graph:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.attribution {
+    text-align: center;
+}
+
+@media (min-width: 700px) {
+
+    .week_graph {
+        width: 50px;
+    }
+}
